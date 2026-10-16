@@ -1,0 +1,4754 @@
+cultureInfo fr-FR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dataset_satisfaction_telecom": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataset satisfaction telecom": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataset_satisfaction_telecom": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "telecom": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "satisfaction telecom": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.customer_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "customer_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "customer_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "customer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "customer identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "customer identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "customer identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.csat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "csat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "csat": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.nps_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "nps_score_v1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nps score": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "np score": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "nps_score": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "score": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "np notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "np slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "np groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "np nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "np cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "np mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.ce": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "ces"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ce": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.commentaire": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "commentaire"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "commentaire": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.canal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "canal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "canal": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "waterway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "seaway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "channel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "vessel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "duct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tube": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "passage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.produit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "produit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "produit": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.temps_resolution_minute": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "temps_resolution_minutes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temps resolution minute": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "temp resolution minute": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "temps_resolution_minutes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "minute": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "resolution minute": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "miniature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "infinitesimal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "little": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "small": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "diminutive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "temp resolution jiffy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "temp resolution moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "temp resolution mo.": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "close": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "painstaking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.duree_abonnement_mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "duree_abonnement_mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duree abonnement mois": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duree_abonnement_mois": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.churn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "churn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "churn": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.arpu_mensuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "arpu_mensuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "arpu mensuel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "arpu_mensuel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.type_abonnement": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "type_abonnement"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "type abonnement": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "type_abonnement": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "genre abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "manner abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "variety abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "brand abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "class abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "kind abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "style abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "form abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "grouping abonnement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "region"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "state or province": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Location"
+			    },
+			    "dataset_satisfaction_telecom.tickets_support": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "tickets_support"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tickets support": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ticket support": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "tickets_support": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "support": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ticket assistance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "ticket cooperation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "ticket maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "ticket sustenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "ticket validation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "ticket verification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "assistance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "cooperation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "maintenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "sustenance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "Dates"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dataset_satisfaction_telecom.date.hiérarchie_de_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "VariationSource": "Dates",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hiérarchie de dates"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hiérarchie de date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hiérarchie de moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hiérarchie de period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.date.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "VariationSource": "Dates",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hiérarchie de dates",
+			          "HierarchyLevel": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date année": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment année": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period année": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.date.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "VariationSource": "Dates",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hiérarchie de dates",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.date.mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "VariationSource": "Dates",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hiérarchie de dates",
+			          "HierarchyLevel": "Mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mois": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mois": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment mois": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mois": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.date.jour": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "VariationSource": "Dates",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hiérarchie de dates",
+			          "HierarchyLevel": "Jour"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "jour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date jour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment jour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period jour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.categorie_ce": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "Categorie_ces"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categorie ce": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Categorie_ces": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.87
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "date.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "date.année": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates",
+			          "ConceptualProperty": "Année"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "année": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "date.mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates",
+			          "ConceptualProperty": "Mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mois": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "date.nom_mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates",
+			          "ConceptualProperty": "Nom_Mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nom mois": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nom_Mois": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "date.numero_mois": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates",
+			          "ConceptualProperty": "Numero_Mois"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numero mois": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Numero_Mois": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "date.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates",
+			          "ConceptualProperty": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "date.semaine": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates",
+			          "ConceptualProperty": "Semaine"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "semaine": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "date.weekend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dates",
+			          "ConceptualProperty": "Week-end"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "week-end": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "week end": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "end": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "week-completion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "week-conclusion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "week-expiration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "week completion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "week conclusion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "week expiration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "week-close": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "week-finish": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "week-last": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "week-stop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "mesure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mesure": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.nps": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "NPS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nps": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.total_clients": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Total_Clients"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total clients": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Clients": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "clients": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total clientele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "clientele": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "total regular": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Nombre de clients": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Promoteurs": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Détracteurs": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Passifs": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.csat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CSAT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "csat": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ces": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ces": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.part_CES": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Part CES (%)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "part CES": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "part CES (%)": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "percentage",
+			        "%"
+			      ]
+			    },
+			    "mesure.NPS_couleur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "NPS couleur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "NPS couleur": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CSAT_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CSAT Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "CSAT display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "csat exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "csat presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "csat demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "csat spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "csat ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "csat pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "csat show": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "csat parade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_churn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Taux_Churn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "taux churn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Taux_Churn": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Taux de Churn": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Taux de churn global": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CSAT_fleche_couleur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CSAT Fleche Couleur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "CSAT fleche couleur": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CSAT_icône": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CSAT Icône"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "CSAT icône": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.client_sur_x": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Client sur X"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "client sur x": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "x": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sur x": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.ARPU_moyen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "ARPU_Moyen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ARPU moyen": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ARPU_Moyen": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ARPU Moyen par mois": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom.categorie_NP": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dataset_satisfaction_telecom",
+			          "ConceptualProperty": "Categorie_NPS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categorie NP": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Categorie_NPS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CES_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CES Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "CES display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ce exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ce presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ce demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ce spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ce ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ce pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "ce show": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "ce parade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CES_icône": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CES Icône"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "CES icône": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CES_couleur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CES Couleur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "CES couleur": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.NPS_moyen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "NPS moyen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "NPS moyen": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.colonne_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Colonne1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "colonne 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Colonne1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CSAT_couleur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CSAT Couleur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CSAT couleur": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.NPS_couleur_bis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "NPS_Couleur_bis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "NPS couleur bis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NPS_Couleur_bis": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.NPS_icône": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "NPS Icône"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "NPS icône": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.NPS_target": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "NPS Target"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "NPS target": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "target": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "np focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "np goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "np objective": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "goal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "objective": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.duree_moyen": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Duree Moyen"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duree moyen": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.temp_moyen_mn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Temp_moyen_mn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "temp moyen mn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Temp_moyen_mn": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CSAT_etoiles_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CSAT Etoiles Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CSAT etoiles display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "csat etoile exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "csat etoile presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "csat etoile demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "csat etoile spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "csat etoile ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "csat etoile pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "csat etoile show": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "csat etoile parade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "CSAT moyen": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.CES_etoiles_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "CES Etoiles Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CES etoiles display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ce etoile exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "ce etoile presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "ce etoile demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "ce etoile spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "ce etoile ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "ce etoile pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "ce etoile show": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "ce etoile parade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "CES moyen": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mesure.taux_churn_mensuel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Mesures",
+			          "ConceptualProperty": "Taux_Churn_Mensuel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "taux churn mensuel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Taux_Churn_Mensuel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "dataset_satisfaction_telecom_date_mois_has_dataset_satisfaction_telecom_date_jour": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom.date.mois": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.mois"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date.jour": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.jour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.mois"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.jour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "moises_have_jour"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.jour"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jour_have_moises"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.jour"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jour_are_in_moises"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_date_trimestre_has_dataset_satisfaction_telecom_date_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom.date.trimestre": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.trimestre"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date.mois": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_moises"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.mois"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "moises_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.mois"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "moises_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_date_année_has_dataset_satisfaction_telecom_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom.date.année": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.année"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date.trimestre": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.année"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "années_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_années"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_années"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_date_hiérarchie_de_date_has_dataset_satisfaction_telecom_date_jour": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom.date.hiérarchie_de_date": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date.jour": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.jour"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.jour"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hiérarchie_de_dates_have_jour"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_date_hiérarchie_de_date_has_dataset_satisfaction_telecom_date_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom.date.hiérarchie_de_date": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date.mois": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hiérarchie_de_dates_have_moises"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_date_hiérarchie_de_date_has_dataset_satisfaction_telecom_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom.date.hiérarchie_de_date": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date.trimestre": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hiérarchie_de_dates_have_trimestres"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_date_hiérarchie_de_date_has_dataset_satisfaction_telecom_date_année": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom.date.hiérarchie_de_date": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date.année": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.année"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hiérarchie_de_dates_have_années"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_date_has_hiérarchie_de_date": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom.date": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date.hiérarchie_de_date": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom.date"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date.hiérarchie_de_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_hiérarchie_de_dates"
+			        }
+			      ]
+			    },
+			    "date_has_dataset_satisfaction_telecom": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_dataset_satisfaction_telecoms"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_date1": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_dates"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_NPS_note_0_10": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.NPS_note_0_10": {
+			          "Target": {
+			            "Entity": "mesure.NPS_note_0_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.NPS_note_0_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_NPS_note_0_10"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_taux_churn_mensuel": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.taux_churn_mensuel": {
+			          "Target": {
+			            "Entity": "mesure.taux_churn_mensuel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.taux_churn_mensuel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_taux_churn_mensuel"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_CES_etoiles_display": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.CES_etoiles_display": {
+			          "Target": {
+			            "Entity": "mesure.CES_etoiles_display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.CES_etoiles_display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_CES_etoiles_display"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_CSAT_etoiles_display": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.CSAT_etoiles_display": {
+			          "Target": {
+			            "Entity": "mesure.CSAT_etoiles_display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.CSAT_etoiles_display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_CSAT_etoiles_display"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_temp_moyen_mn": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.temp_moyen_mn": {
+			          "Target": {
+			            "Entity": "mesure.temp_moyen_mn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.temp_moyen_mn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_temp_moyen_mn"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_duree_moyen": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.duree_moyen": {
+			          "Target": {
+			            "Entity": "mesure.duree_moyen"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.duree_moyen"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_duree_moyen"
+			        }
+			      ]
+			    },
+			    "mesure_has_NPS_target": {
+			      "Binding": {
+			        "ConceptualEntity": "Mesures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mesure": {
+			          "Target": {
+			            "Entity": "mesure"
+			          }
+			        },
+			        "mesure.NPS_target": {
+			          "Target": {
+			            "Entity": "mesure.NPS_target"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mesure"
+			            },
+			            "Object": {
+			              "Role": "mesure.NPS_target"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mesures_have_NPS_target"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_NPS_icône": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.NPS_icône": {
+			          "Target": {
+			            "Entity": "mesure.NPS_icône"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.NPS_icône"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_NPS_icône"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_NPS_couleur_bis": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.NPS_couleur_bis": {
+			          "Target": {
+			            "Entity": "mesure.NPS_couleur_bis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.NPS_couleur_bis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_NPS_couleur_bis"
+			        }
+			      ]
+			    },
+			    "mesure_has_CSAT_couleur": {
+			      "Binding": {
+			        "ConceptualEntity": "Mesures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mesure": {
+			          "Target": {
+			            "Entity": "mesure"
+			          }
+			        },
+			        "mesure.CSAT_couleur": {
+			          "Target": {
+			            "Entity": "mesure.CSAT_couleur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mesure"
+			            },
+			            "Object": {
+			              "Role": "mesure.CSAT_couleur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mesures_have_CSAT_couleur"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_NPS_moyen": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.NPS_moyen": {
+			          "Target": {
+			            "Entity": "mesure.NPS_moyen"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.NPS_moyen"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_NPS_moyen"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_categorie_NP": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.categorie_NP": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.categorie_NP"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.categorie_NP"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_categorie_NP"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_ARPU_moyen": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.ARPU_moyen": {
+			          "Target": {
+			            "Entity": "mesure.ARPU_moyen"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.ARPU_moyen"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_ARPU_moyen"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_client_sur_x": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.client_sur_x": {
+			          "Target": {
+			            "Entity": "mesure.client_sur_x"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.client_sur_x"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_client_sur_x"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_taux_churn": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.taux_churn": {
+			          "Target": {
+			            "Entity": "mesure.taux_churn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.taux_churn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_taux_churn"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_NPS_couleur": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.NPS_couleur": {
+			          "Target": {
+			            "Entity": "mesure.NPS_couleur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.NPS_couleur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_NPS_couleur"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_part_CES": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.part_CES": {
+			          "Target": {
+			            "Entity": "mesure.part_CES"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.part_CES"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_part_CES"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_ces": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.ces": {
+			          "Target": {
+			            "Entity": "mesure.ces"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.ces"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_ces"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_csat": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.csat": {
+			          "Target": {
+			            "Entity": "mesure.csat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.csat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_csat"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_total_clients": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.total_clients": {
+			          "Target": {
+			            "Entity": "mesure.total_clients"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.total_clients"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_total_clients"
+			        }
+			      ]
+			    },
+			    "mesure_has_nb_promoteurs": {
+			      "Binding": {
+			        "ConceptualEntity": "Mesures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mesure": {
+			          "Target": {
+			            "Entity": "mesure"
+			          }
+			        },
+			        "mesure.nb_promoteurs": {
+			          "Target": {
+			            "Entity": "mesure.nb_promoteurs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mesure"
+			            },
+			            "Object": {
+			              "Role": "mesure.nb_promoteurs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mesures_have_nb_promoteurs"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_mesure_nps": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "mesure.nps": {
+			          "Target": {
+			            "Entity": "mesure.nps"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "mesure.nps"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_nps"
+			        }
+			      ]
+			    },
+			    "date_has_weekend": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.weekend": {
+			          "Target": {
+			            "Entity": "date.weekend"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.weekend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_weekends"
+			        }
+			      ]
+			    },
+			    "date_has_semaine": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.semaine": {
+			          "Target": {
+			            "Entity": "date.semaine"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.semaine"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_semaines"
+			        }
+			      ]
+			    },
+			    "date_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.trimestre": {
+			          "Target": {
+			            "Entity": "date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_trimestres"
+			        }
+			      ]
+			    },
+			    "date_has_numero_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.numero_mois": {
+			          "Target": {
+			            "Entity": "date.numero_mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.numero_mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_numero_moises"
+			        }
+			      ]
+			    },
+			    "date_has_nom_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.nom_mois": {
+			          "Target": {
+			            "Entity": "date.nom_mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.nom_mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_nom_moises"
+			        }
+			      ]
+			    },
+			    "date_has_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.mois": {
+			          "Target": {
+			            "Entity": "date.mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_moises"
+			        }
+			      ]
+			    },
+			    "date_has_année": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.année": {
+			          "Target": {
+			            "Entity": "date.année"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.année"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_années"
+			        }
+			      ]
+			    },
+			    "date_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Dates"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "date": {
+			          "Target": {
+			            "Entity": "date"
+			          }
+			        },
+			        "date.date": {
+			          "Target": {
+			            "Entity": "date.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "date"
+			            },
+			            "Object": {
+			              "Role": "date.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_dates"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_categorie_ce": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.categorie_ce": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.categorie_ce"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.categorie_ce"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_categorie_ce"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.date": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_dates1"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_tickets_support": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.tickets_support": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.tickets_support"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.tickets_support"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_tickets_supports"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.region": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_regions"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_type_abonnement": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.type_abonnement": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.type_abonnement"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.type_abonnement"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_type_abonnements"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_arpu_mensuel": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.arpu_mensuel": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.arpu_mensuel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.arpu_mensuel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_arpu_mensuels"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "dataset_satisfaction_telecom.arpu_mensuel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "arpu_mensuel_indicates_how_expensive_dataset_satisfaction_telecoms_are"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_churn": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.churn": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.churn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.churn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_churns"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_duree_abonnement_mois": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.duree_abonnement_mois": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.duree_abonnement_mois"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.duree_abonnement_mois"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_duree_abonnement_moises"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_temps_resolution_minute": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.temps_resolution_minute": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.temps_resolution_minute"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.temps_resolution_minute"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_temps_resolution_minutes"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_produit": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.produit": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.produit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.produit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_produits"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_canal": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.canal": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.canal"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.canal"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_canals"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_commentaire": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.commentaire": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.commentaire"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.commentaire"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_commentaires"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_ce": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.ce": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.ce"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.ce"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_ce"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_nps_score": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.nps_score": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.nps_score"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.nps_score"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_nps_scores"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_csat": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.csat": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.csat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.csat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_csats"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_has_customer_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.customer_id": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.customer_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.customer_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_have_customer_ids"
+			        }
+			      ]
+			    },
+			    "dataset_satisfaction_telecom_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dataset_satisfaction_telecom"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataset_satisfaction_telecom": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom"
+			          }
+			        },
+			        "dataset_satisfaction_telecom.region": {
+			          "Target": {
+			            "Entity": "dataset_satisfaction_telecom.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dataset_satisfaction_telecom.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dataset_satisfaction_telecom"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dataset_satisfaction_telecom.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_satisfaction_telecoms_are_in_regions"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

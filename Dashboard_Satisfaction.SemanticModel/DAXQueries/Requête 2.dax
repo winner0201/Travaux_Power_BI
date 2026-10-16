@@ -1,0 +1,5 @@
+EVALUATE
+	ROW(
+		"CES_Couleur", 'Mesures'[CES Couleur],
+		"CES_Icône", 'Mesures'[CES Icône]
+	)

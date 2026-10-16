@@ -1,0 +1,22 @@
+model Model
+	culture: fr-FR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: fr-FR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dataset_satisfaction_telecom","Dates"]
+
+annotation PBI_ProTooling = ["DevMode","DaxQueryView_Desktop"]
+
+ref table dataset_satisfaction_telecom
+ref table DateTableTemplate_73fe566b-83dd-48a4-8855-b9683e1991f3
+ref table LocalDateTable_67fc782a-e29c-4147-822c-7d58ccab627f
+ref table Dates
+ref table Mesures
+
+ref cultureInfo fr-FR
+

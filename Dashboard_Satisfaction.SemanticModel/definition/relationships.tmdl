@@ -1,0 +1,11 @@
+relationship 8798d998-f87e-4ad0-bddc-7b8d1554d447
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dataset_satisfaction_telecom.Dates
+	toColumn: LocalDateTable_67fc782a-e29c-4147-822c-7d58ccab627f.Date
+
+relationship ab42517c-855e-9864-f8f5-5b0eddbfe352
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Dates.Date
+	toColumn: dataset_satisfaction_telecom.Dates
+

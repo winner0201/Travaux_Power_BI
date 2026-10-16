@@ -1,0 +1,60 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0.800000011920929,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "dataset_satisfaction_telecom",
+          "nodeLineageTag": "96041742-8617-410a-bb06-816c6d7bcb47",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 480,
+            "y": 38
+          },
+          "nodeIndex": "Dates",
+          "nodeLineageTag": "434d0cc4-0691-4a8a-9e53-30f4b359010c",
+          "size": {
+            "height": 272,
+            "width": 292
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 822,
+            "y": 55
+          },
+          "nodeIndex": "Mesures",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Toutes les tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Toutes les tables",
+  "defaultDiagram": "Toutes les tables"
+}

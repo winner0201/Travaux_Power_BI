@@ -1,0 +1,8 @@
+# Exclure les données locales cachées de Power BI
+.pbi/
+
+# Ignorer les fichiers de cache utilisateur
+*.user.json
+
+# OPTIONNEL : Si vous ne voulez pas pousser les extraits de données volumineux
+# *.bin

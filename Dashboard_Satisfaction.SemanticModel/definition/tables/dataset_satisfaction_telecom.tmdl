@@ -1,0 +1,239 @@
+table dataset_satisfaction_telecom
+	lineageTag: 96041742-8617-410a-bb06-816c6d7bcb47
+
+	column customer_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 50a4185f-fcab-4ede-9060-9fafba0c3fe6
+		summarizeBy: sum
+		sourceColumn: customer_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column csat
+		dataType: int64
+		formatString: 0
+		lineageTag: 2a60116f-ab31-4031-bc67-cb205c104024
+		summarizeBy: none
+		sourceColumn: csat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column nps_score_v1
+		dataType: int64
+		formatString: 0
+		lineageTag: 88d70bf6-66f0-49ba-b354-54d2e416c036
+		summarizeBy: none
+		sourceColumn: nps_score_v1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column ces
+		dataType: int64
+		formatString: 0
+		lineageTag: 22336780-0c0a-42a8-995b-8d602c3b84d5
+		summarizeBy: none
+		sourceColumn: ces
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column commentaire
+		dataType: string
+		lineageTag: 4eed0947-4302-4614-b318-664ad10389d9
+		summarizeBy: none
+		sourceColumn: commentaire
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column canal
+		dataType: string
+		lineageTag: b96dd2e1-56ff-4cd8-aeae-1a0423889b2a
+		summarizeBy: none
+		sourceColumn: canal
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column produit
+		dataType: string
+		lineageTag: 8e675f90-3c58-4788-b433-d42bccde5e67
+		summarizeBy: none
+		sourceColumn: produit
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column temps_resolution_minutes
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f5fdff3-a8ac-47ce-b3d9-957e86d8a507
+		summarizeBy: sum
+		sourceColumn: temps_resolution_minutes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column duree_abonnement_mois
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f096d66-77eb-4009-a13e-c8d3710065a7
+		summarizeBy: sum
+		sourceColumn: duree_abonnement_mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column churn
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f5a44d1-627c-4c1e-a0c1-7097fe91f74e
+		summarizeBy: none
+		sourceColumn: churn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column arpu_mensuel
+		dataType: double
+		formatString: #,0.00\ "€";-#,0.00\ "€";#,0.00\ "€"
+		lineageTag: 32929247-41a0-489a-8563-9b0f6905cf9f
+		summarizeBy: sum
+		sourceColumn: arpu_mensuel
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_abonnement
+		dataType: string
+		lineageTag: 1e9aa0ae-6320-40cf-8b52-14e228d4a4f1
+		summarizeBy: none
+		sourceColumn: type_abonnement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: b69e0669-6de7-4d53-b8df-3b0b4ee4b93a
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: region
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column tickets_support
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ff1390f-b6b0-46d7-a41c-060c505fce50
+		summarizeBy: sum
+		sourceColumn: tickets_support
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dates
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 02abdaff-da01-449d-bd5c-1598243e54c2
+		summarizeBy: none
+		sourceColumn: Dates
+
+		variation Variation
+			isDefault
+			relationship: 8798d998-f87e-4ad0-bddc-7b8d1554d447
+			defaultHierarchy: LocalDateTable_67fc782a-e29c-4147-822c-7d58ccab627f.'Hiérarchie de dates'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Categorie_ces =
+			
+			SWITCH(
+			    TRUE(),
+			    dataset_satisfaction_telecom[ces] <= 2, "Aucun effort",
+			    dataset_satisfaction_telecom[ces] >=4,"Effort très important",
+			    "Effort modéré"
+			)
+		lineageTag: 3be8204d-adec-4669-ba29-01495acc5ebe
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categorie_NPS =
+			
+			SWITCH(
+			    TRUE(),
+			    dataset_satisfaction_telecom[nps_score] <= 6, "Detracteurs",
+			    dataset_satisfaction_telecom[nps_score] >=9, "Promoteurs",
+			    TRUE(), "Passifs"
+			)
+		lineageTag: 2f1b19a8-863d-42a3-a3b9-a2634286e174
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column nps_score
+		dataType: int64
+		formatString: 0
+		lineageTag: f7d44cd6-686a-4c83-a375-dbfbef27aca7
+		summarizeBy: none
+		sourceColumn: nps_score
+
+		annotation SummarizationSetBy = User
+
+	column 'categorie csat'
+		dataType: string
+		lineageTag: 6a690d4f-ef43-479e-8bd5-e661037d1a70
+		summarizeBy: none
+		sourceColumn: categorie csat
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dataset_satisfaction_telecom = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\angou\Desktop\BUSINESS PLAN\Satisfaction client\dataset_satisfaction_telecom.csv"),[Delimiter=";", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"En-têtes promus" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"customer_id", Int64.Type}, {"csat", Int64.Type}, {"nps_score", Int64.Type}, {"ces", Int64.Type}, {"commentaire", type text}, {"canal", type text}, {"produit", type text}, {"temps_resolution_minutes", Int64.Type}, {"duree_abonnement_mois", Int64.Type}, {"churn", Int64.Type}, {"arpu_mensuel", type number}, {"type_abonnement", type text}, {"region", type text}, {"tickets_support", Int64.Type}}),
+				    #"Personnalisée ajoutée" = Table.AddColumn(#"Type modifié", "Dates", each #date(2020, 1, 1) + #duration([customer_id] - 1, 0, 0, 0)),
+				    #"Type modifié1" = Table.TransformColumnTypes(#"Personnalisée ajoutée",{{"Dates", type date}}),
+				    #"Personnalisée ajoutée1" = Table.AddColumn(#"Type modifié1", "nps_normalise", each Number.Round( ([nps_score] + 50) / 15 , 0 )),
+				    #"Type modifié2" = Table.TransformColumnTypes(#"Personnalisée ajoutée1",{{"nps_normalise", Int64.Type}}),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Type modifié2",{{"nps_score", "nps_score_v1"}, {"nps_normalise", "nps_score"}}),
+				    #"Colonnes permutées" = Table.ReorderColumns(#"Colonnes renommées",{"customer_id", "csat", "nps_score_v1", "nps_score", "ces", "commentaire", "canal", "produit", "temps_resolution_minutes", "duree_abonnement_mois", "churn", "arpu_mensuel", "type_abonnement", "region", "tickets_support", "Dates"}),
+				    #"Colonne conditionnelle ajoutée" = Table.AddColumn(#"Colonnes permutées", "categorie csat", each if [csat] <= 2 then "Pas du tout satisfait" else if [csat] >= 4 then "Très satisfait" else "satisfait")
+				in
+				    #"Colonne conditionnelle ajoutée"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

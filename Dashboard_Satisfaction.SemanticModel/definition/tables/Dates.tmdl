@@ -1,0 +1,143 @@
+table Dates
+	lineageTag: 434d0cc4-0691-4a8a-9e53-30f4b359010c
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5a4beafa-ec1b-462c-a3d8-cc14c2bb0b56
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Année
+		dataType: int64
+		lineageTag: 67a7beba-cf16-4305-9a6c-f75575c0f098
+		summarizeBy: none
+		sourceColumn: Année
+
+		changedProperty = DataType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Mois
+		dataType: double
+		lineageTag: 1fcdcfe2-4b63-4b6c-865a-a3cc361072b0
+		summarizeBy: sum
+		sourceColumn: Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Nom_Mois
+		dataType: string
+		lineageTag: 2b74ec61-aa98-42de-92e0-afc251bb1477
+		summarizeBy: none
+		sourceColumn: Nom_Mois
+		sortByColumn: Numero_Mois
+
+		changedProperty = SortByColumn
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Numero_Mois
+		dataType: int64
+		formatString: 0
+		lineageTag: a7d22d4d-c522-47d7-9d80-1a6bc06117ce
+		summarizeBy: sum
+		sourceColumn: Numero_Mois
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		dataType: string
+		lineageTag: d2617a97-0754-496c-bcad-171a72259795
+		summarizeBy: none
+		sourceColumn: Trimestre
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semaine
+		dataType: double
+		lineageTag: e9dc834f-31b8-498b-9cd2-07cc627a01a3
+		summarizeBy: sum
+		sourceColumn: Semaine
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Week-end
+		dataType: string
+		lineageTag: c668792b-7611-4042-9ad0-a403bb037006
+		summarizeBy: none
+		sourceColumn: Week-end
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dates = m
+		mode: import
+		source = ```
+				let
+				    // 1. Définir les dates de début et de fin
+				    DateDebut = #date(2020, 1, 1),
+				    DateFin = #date(2025, 12, 31),
+				    
+				    // 2. Calculer le nombre de jours entre les deux dates
+				    NbJours = Duration.Days(DateFin - DateDebut) + 1,
+				    
+				    // 3. Générer la liste des dates
+				    ListeDates = List.Dates(DateDebut, NbJours, #duration(1, 0, 0, 0)),
+				    
+				    // 4. Convertir la liste en une table et renommer la colonne principale
+				    TableSource = Table.FromList(ListeDates, Splitter.SplitByNothing(), {"DateKey"}, null, ExtraValues.Error),
+				    
+				    // 5. Appliquer le type de données 'Date' à la colonne principale
+				    ModifierType = Table.TransformColumnTypes(TableSource,{{"DateKey", type date}}),
+				    
+				    // 6. Ajouter les colonnes de temps dérivées
+				    AjoutColonnes = Table.AddColumn(ModifierType, "Date", each [DateKey], type date),
+				    AjoutAnnee = Table.AddColumn(AjoutColonnes, "Année", each Date.Year([DateKey]), type number),
+				    AjoutMoisNum = Table.AddColumn(AjoutAnnee, "Numéro du mois", each Date.Month([DateKey]), type number),
+				    AjoutMoisNom = Table.AddColumn(AjoutMoisNum, "Nom du mois", each Date.ToText([DateKey], "MMMM", "fr-FR"), type text),
+				    AjoutMois = Table.AddColumn(AjoutMoisNom, "Mois", each Date.Year([DateKey]) * 100 + Date.Month([DateKey]), type number),
+				    AjoutTrimestre = Table.AddColumn(AjoutMois, "Trimestre", each "T" & Text.From(Date.QuarterOfYear([DateKey])), type text),
+				    AjoutSemaine = Table.AddColumn(AjoutTrimestre, "Semaine", each Date.WeekOfYear([DateKey]), type number),
+				    
+				    // 7. Colonne Week-end (Samedi = 6, Dimanche = 0 en Power Query)
+				    AjoutJourSemaine = Table.AddColumn(AjoutSemaine, "Jour de la semaine", each Date.DayOfWeek([DateKey], Day.Sunday)),
+				    AjoutWeekend = Table.AddColumn(AjoutJourSemaine, "Week-end", each if [Jour de la semaine] = 0 or [Jour de la semaine] = 6 then "Oui" else "Non", type text),
+				    
+				    // 8. Nettoyage final : suppression de la colonne d'index et de jour de la semaine intermédiaire
+				    ColonnesFinales = Table.SelectColumns(AjoutWeekend,{"Date", "Année", "Mois", "Nom du mois", "Numéro du mois", "Trimestre", "Semaine", "Week-end"}),
+				    #"Type modifié" = Table.TransformColumnTypes(ColonnesFinales,{{"Numéro du mois", Int64.Type}}),
+				    #"Colonnes renommées" = Table.RenameColumns(#"Type modifié",{{"Nom du mois", "Nom_Mois"}, {"Numéro du mois", "Numero_Mois"}})
+				in
+				    #"Colonnes renommées"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

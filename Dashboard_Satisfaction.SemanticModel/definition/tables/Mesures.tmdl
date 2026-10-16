@@ -1,0 +1,511 @@
+table Mesures
+	lineageTag: 950be7be-2b30-4696-802f-1c002529a68f
+
+	measure NPS = ```
+			
+			
+			Var Nb_Promoteurs = CALCULATE(
+			    COUNTROWS('dataset_satisfaction_telecom'),
+			    'dataset_satisfaction_telecom'[nps_score] >= 9
+			)
+			
+			var Nb_Detracteurs = CALCULATE(
+			    COUNTROWS('dataset_satisfaction_telecom'),
+			    'dataset_satisfaction_telecom'[nps_score] <= 6
+			)
+			
+			var Total_Clients = COUNTROWS('dataset_satisfaction_telecom')
+			
+			
+			VAR NPS_F= DIVIDE(Nb_Promoteurs - Nb_Detracteurs, Total_Clients, 0)
+			
+			RETURN NPS_F
+			
+			
+			```
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 1d7420fb-4972-4928-a53b-e74c5efb54c3
+
+	measure Total_Clients = COUNTROWS('dataset_satisfaction_telecom')
+		formatString: 0
+		lineageTag: db6c24a4-b7e2-4b10-ad71-d098c829f40a
+
+	measure CSAT =
+			
+			Var Nb_csat = CALCULATE(
+			     COUNTROWS('dataset_satisfaction_telecom'),
+			    'dataset_satisfaction_telecom'[csat] >= 4)
+			    RETURN DIVIDE(Nb_csat,[Total_Clients])
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: f28941e8-53a7-4763-b4cc-9ff554447c98
+
+	measure CES = ```
+			
+			Var Ces_Faible = DIVIDE(CALCULATE(
+			    COUNTROWS('dataset_satisfaction_telecom'),
+			    'dataset_satisfaction_telecom'[Categorie_ces] ="Aucun effort"
+			),[Total_Clients])
+			
+			var Ces_Forte = DIVIDE(CALCULATE(
+			    COUNTROWS('dataset_satisfaction_telecom'),
+			    'dataset_satisfaction_telecom'[Categorie_ces] ="Effort très important"
+			),[Total_Clients])
+			
+			RETURN  Ces_Faible - Ces_Forte 
+			```
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: ab8fb502-c01b-4849-a089-50e19207440c
+
+	measure 'Part CES (%)' = ```
+			
+			DIVIDE(
+			    COUNTROWS('dataset_satisfaction_telecom'),
+			    CALCULATE(COUNTROWS('dataset_satisfaction_telecom'), ALL('dataset_satisfaction_telecom'))
+			)
+			
+			```
+		formatString: 0.0\ %;-0.0\ %;0.0\ %
+		lineageTag: 43e2279e-1128-44cb-8195-39be8f088ffc
+
+	measure 'NPS couleur' =
+			
+			VAR csatValue = SELECTEDVALUE(dataset_satisfaction_telecom[nps_score])
+			VAR Couleur =
+			    SWITCH(
+			        TRUE(),
+			        csatValue <= 6 , "#D62728",     -- Rouge
+			        csatValue >= 9 , "#2CA02C" ,   -- Vert
+			        TRUE(), "#FF7F0E"             -- Orange
+			    )
+			    RETURN Couleur
+		lineageTag: 7339f2ac-1ca4-4eef-8232-41b13f2e7185
+
+	measure 'CSAT Display' = ```
+			
+			/* VAR csatValue = AVERAGE('dataset_satisfaction_telecom'[csat])
+			VAR arrow =
+			    SWITCH(
+			        TRUE(),
+			        csatValue < 3, " ↓",      -- Mauvais
+			        csatValue < 4, " →",      -- Moyen
+			        " ↑"                      -- Bon
+			    )
+			RETURN
+			FORMAT(csatValue, "0.0") & " / 5" --& arrow*/
+			
+			
+			```
+		formatString: 0
+		isHidden
+		lineageTag: 6d251171-c369-40c2-ba9e-9304e0ff1af3
+
+	measure Taux_Churn = ```
+			DIVIDE(
+			    CALCULATE(COUNTROWS('dataset_satisfaction_telecom'), 'dataset_satisfaction_telecom'[churn] = 0),
+			    COUNTROWS('dataset_satisfaction_telecom'),
+			    0
+			)
+			
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: c311f546-d71b-4f46-a404-1d52c59f59fb
+
+	measure 'CSAT Fleche Couleur' = ```
+			
+			/*VAR csatValue = AVERAGE('dataset_satisfaction_telecom'[csat])
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    csatValue < 3, "#D62728",   -- rouge si mauvais
+			    csatValue < 4, "#FF9800",   -- orange si moyen
+			    "#2CA02C"                    -- vert si bon
+			)*/
+			
+			```
+		formatString: 0
+		isHidden
+		lineageTag: 1eedc0d3-fb4f-4c30-b6ad-ef2e22499275
+
+	measure 'CSAT Icône' =
+			
+			/* VAR CSAT_Valeur = [csat_moyen]
+			VAR Seuil_Mauvais = 2.4
+			VAR Seuil_Bon = 4
+			
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        // Condition 1 : Élevé (Flèche vers le HAUT)
+			        CSAT_Valeur >= Seuil_Bon,UNICHAR(9650), // ▲
+			
+			        // Condition 2 : Mauvais (Flèche vers le BAS)
+			        CSAT_Valeur < Seuil_Mauvais,UNICHAR(9660), // ▼
+			
+			        // Condition 3 : Bon (Moyen) - Flèche HORIZONTALE
+			        TRUE(), UNICHAR(8596) // ↔ (Flèche bidirectionnelle)
+			    )*/
+		formatString: 0
+		isHidden
+		lineageTag: 3e1e1a5c-90cf-4522-b477-89d50b891f7b
+
+	measure 'Client sur X' =
+			
+			VAR ChurnRate = [Taux_Churn]   -- déjà au format décimal (ex : 0.134)
+			VAR X = DIVIDE(1, ChurnRate)
+			RETURN
+			"📌 environ 1 client sur " & FORMAT(X, "0") & " quitte l'opérateur dans la période"
+		lineageTag: 540aa077-460e-41e7-8e93-f7cc39fd3b75
+
+	measure ARPU_Moyen = AVERAGE('dataset_satisfaction_telecom'[arpu_mensuel])
+		formatString: #,0\ "€";-#,0\ "€";#,0\ "€"
+		lineageTag: 48a5dc93-2803-488d-b9b5-7e7ebd93f7d7
+
+	measure 'CES Display' =
+			
+			/*VAR csatValue = AVERAGE('dataset_satisfaction_telecom'[ces])
+			VAR arrow =
+			    SWITCH(
+			        TRUE(),
+			        csatValue < 3, " ↑"  ,      -- Faible
+			        csatValue < 4, " →",      -- moyen
+			        " ↓"                     -- trop
+			    )
+			RETURN
+			FORMAT(csatValue, "0.0") & " / 7" --& arrow */
+		formatString: 0
+		isHidden
+		lineageTag: 9a8c6c4a-c7ac-4569-b59b-54b98ad0fb3b
+
+	measure 'CES Icône' = ```
+			
+			/*VAR CSAT_Valeur = [CES_moyen]
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        // Condition 2 : bon (Flèche vers le haut)
+			        CSAT_Valeur <3 , "▲",
+			       // Condition 2 : Mauvais (Flèche vers le BAS)
+			
+			       CSAT_Valeur > 5,"▼",
+			  
+			      // Condition 3 : Bon (Moyen) - Flèche HORIZONTALE
+			        "↔"
+			    )*/
+			```
+		formatString: 0
+		isHidden
+		lineageTag: d5a35c85-b1b8-4b4f-83cc-92dff1a7251a
+
+	measure 'CES Couleur' = ```
+			
+			VAR cesValue = AVERAGE('dataset_satisfaction_telecom'[ces])
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    cesValue <= 2, "Green",   -- Vert : effort faible 
+			    cesValue >=4 , "red" ,  -- Rouge : effort élevé 
+			   "orange"                  -- Orange : effort moyen
+			)
+			
+			```
+		lineageTag: b1f12a59-09e3-4998-884f-3e9722ec1a33
+
+	measure 'NPS moyen' = AVERAGE(dataset_satisfaction_telecom[nps_score_v1])
+		lineageTag: ee0027f1-cfd5-4820-874e-ef32d76cb602
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CSAT Couleur' = ```
+			
+			VAR CSAT_Valeur = AVERAGE('dataset_satisfaction_telecom'[csat])
+			VAR Seuil_Mauvais = 2.4
+			VAR Seuil_Bon = 4
+			
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        // Vert pour Élevé
+			        CSAT_Valeur >= Seuil_Bon, "green", 
+			        
+			        // Rouge pour Mauvais
+			        CSAT_Valeur < Seuil_Mauvais, "red", 
+			
+			        // Orange pour Bon (Moyen)
+			        TRUE(), "orange" 
+			    )
+			```
+		lineageTag: 737145c5-ddb2-4378-b6f3-45188284bc36
+
+	measure NPS_Couleur_bis = ```
+			
+			VAR npsValue = [NPS]
+			    
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    npsValue < 0, "red",    -- rouge
+			    npsValue <= 30, "orange",  -- Orange
+			    "green"                   -- Vert
+			)
+			
+			```
+		lineageTag: c9991edd-8b4a-44b8-978f-c81005cbb8b2
+
+	measure 'NPS Icône' =
+			
+			VAR NPS_Valeur = [NPS]
+			RETURN
+			
+			    SWITCH(
+			        TRUE(),
+			        NPS_Valeur < 0,"▼", --" ↓",     -- Mauvais
+			        NPS_Valeur <= 30,"↔", --" →",   -- Moyen
+			        "▲"                    -- Bon
+			    )
+		formatString: 0
+		lineageTag: 74e55a78-1f29-4a46-b981-b9492bc4c80f
+
+	measure 'NPS Target' = 0.8
+		lineageTag: 332f92e9-759d-44d8-ab45-41292e60d245
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Duree Moyen' = AVERAGE(dataset_satisfaction_telecom[duree_abonnement_mois])/30
+		formatString: 0.0
+		lineageTag: 7eb80690-bfc4-47ca-915f-e717b4c51a2c
+
+	measure Temp_moyen_mn = Format(AVERAGE(dataset_satisfaction_telecom[temps_resolution_minutes]),"0") & "min"
+		lineageTag: 15f5b562-d282-49da-98e4-4c87afe5f9f8
+
+	measure 'CSAT Etoiles Display' = ```
+			
+			VAR score = AVERAGE('dataset_satisfaction_telecom'[csat])
+			VAR etoiles =
+			    SWITCH(
+			        TRUE(),
+			        score >= 4.5, "😊",
+			        score >= 4.0, "😊",
+			        score >= 3.0, "😐",
+			        score >= 2.0, "😡",
+			        "😡"
+			    )
+			RETURN  "  (" & FORMAT(score, "0.0") & " / 5)" & etoiles
+			
+			```
+		lineageTag: 26b84805-4958-4d25-99c6-3d5ac84371d2
+
+	measure 'CES Etoiles Display' = ```
+			
+			VAR score = AVERAGE('dataset_satisfaction_telecom'[ces])
+			VAR etoiles =
+			    SWITCH(
+			        TRUE(),
+			        score <= 1.4, "😊",
+			        score <= 2.2, "😊",
+			        score <= 3.2, "😐",
+			        score <= 4.0, "😡",
+			        "😡"
+			    )
+			RETURN "  (" & FORMAT(score, "0.0") & " / 5)"& etoiles
+			
+			```
+		lineageTag: f1e40490-f67f-4e32-9d67-7c29f6926ca2
+
+	measure Taux_Churn_Mensuel = ```
+			
+			DIVIDE(
+			    CALCULATE(COUNTROWS('dataset_satisfaction_telecom'), 'dataset_satisfaction_telecom'[churn] = 0, DATESINPERIOD('dataset_satisfaction_telecom'[Dates], MAX('dataset_satisfaction_telecom'[Dates]), -1, MONTH)),
+			    CALCULATE(COUNTROWS('dataset_satisfaction_telecom'), DATESINPERIOD('dataset_satisfaction_telecom'[Dates], MAX('dataset_satisfaction_telecom'[Dates]), -1, MONTH)),
+			    0
+			) 
+			
+			
+			```
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: eaaba2aa-52e2-414c-8acd-686ae65769b1
+
+	measure Variation_CSAT_Mois = ```
+			
+			VAR Mois_Prec = CALCULATE(
+			    [CSAT],
+			    DATEADD('Dates'[Date], -1,MONTH)
+			)
+			VAR  Variation_CSAT = DIVIDE( CALCULATE(
+			[CSAT] - Mois_Prec), Mois_Prec)*100
+			VAR Variation = 
+			SWITCH(
+			    TRUE(),
+			    Variation_CSAT > 0, "+" & FORMAT(Variation_CSAT, "0") & "%" & "△",
+			    Variation_CSAT < 0, FORMAT(Variation_CSAT, "0") & "%" &  "▽",
+			    "↔ 0"
+			)
+			RETURN Variation
+			```
+		lineageTag: 1aba5dd3-9632-455a-84f3-54e7aafc557a
+
+	measure Variation_CSAT_Annee = ```
+			
+			VAR Mois_Prec = CALCULATE(
+			    [CSAT],
+			    (DATEADD('Dates'[Date], -1, YEAR)),
+			    ALL(dataset_satisfaction_telecom)
+			)
+			 
+			VAR  Variation_CSAT = DIVIDE( CALCULATE(
+			[CSAT] - Mois_Prec), Mois_Prec)*100
+			VAR Variation = 
+			SWITCH(
+			    TRUE(),
+			    Variation_CSAT > 0, "+" & FORMAT(Variation_CSAT, "0") & "%" & "△",
+			    Variation_CSAT < 0, FORMAT(Variation_CSAT, "0") & "%" & "▽ " ,
+			    "↔ 0"
+			)
+			RETURN "(" & Variation & ")" & " " & " " & "vs" & " "& SELECTEDVALUE(Dates[Année])-1
+			```
+		lineageTag: a0939b3c-6999-414d-937c-8f3a35814449
+
+	measure 'CSAT Trend Color' = ```
+			
+			VAR Mois_Prec = CALCULATE(
+			    [CSAT],
+			    SAMEPERIODLASTYEAR('Dates'[Date])
+			)
+			VAR  Variation_CSAT = DIVIDE( CALCULATE(
+			[CSAT] - Mois_Prec), Mois_Prec)*100
+			VAR VarPct = 
+			SWITCH(
+			    TRUE(),
+			    Variation_CSAT > 0, "#4CAF50",   -- Vert
+			    Variation_CSAT < 0, "#F44336",   -- Rouge
+			    "#9E9E9E"                -- Gris neutre
+			)
+			RETURN VarPct
+			```
+		lineageTag: de2f274a-ee15-4cef-9642-cea5a8052137
+
+	measure 'CSAT mois Color' = ```
+			
+			VAR Mois_Prec = CALCULATE(
+			    [CSAT],
+			    PREVIOUSMONTH('Dates'[Date])
+			)
+			VAR  Variation_CSAT = DIVIDE( CALCULATE(
+			[CSAT] - Mois_Prec), Mois_Prec)*100
+			VAR VarPct = 
+			SWITCH(
+			    TRUE(),
+			    Variation_CSAT > 0, "#4CAF50",   -- Vert
+			    Variation_CSAT < 0, "#F44336",   -- Rouge
+			    "#9E9E9E"                -- Gris neutre
+			)
+			RETURN VarPct
+			```
+		lineageTag: bcb2a82a-366f-4b04-b4cd-46b02fd05363
+
+	measure Mois_Prec =
+			CALCULATE(
+			    [CSAT],
+			    SAMEPERIODLASTYEAR('dataset_satisfaction_telecom'[Dates])
+			)
+		lineageTag: bc5d75a9-622d-49e5-ac76-8ee18c3f8d8e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Variation_CES_Annee = ```
+			
+			VAR Mois_Prec = CALCULATE(
+			    [CES],
+			    (DATEADD('Dates'[Date], -1, YEAR))
+			)
+			 
+			VAR  Variation_CSAT = DIVIDE( CALCULATE(
+			[CES] - Mois_Prec), Mois_Prec)*100
+			VAR Variation = 
+			SWITCH(
+			    TRUE(),
+			    Variation_CSAT > 0, "+" & FORMAT(Variation_CSAT, "0") & "%" & "△",
+			    Variation_CSAT < 0, FORMAT(Variation_CSAT, "0") & "%" & "▽ " ,
+			    "↔ 0"
+			)
+			RETURN "(" & Variation & ")" & " " & "vs" & " "& SELECTEDVALUE(Dates[Année])-1
+			```
+		lineageTag: f03d4763-8ac5-4c07-a99d-3409fa6a6e69
+
+	measure 'CES Trend Color' = ```
+			
+			VAR Mois_Prec = CALCULATE(
+			    [CES],
+			    SAMEPERIODLASTYEAR('Dates'[Date])
+			)
+			VAR  Variation_CSAT = DIVIDE( CALCULATE(
+			[CES] - Mois_Prec), Mois_Prec)*100
+			VAR VarPct = 
+			SWITCH(
+			    TRUE(),
+			    Variation_CSAT > 0, "#4CAF50",   -- Vert
+			    Variation_CSAT < 0, "#F44336",   -- Rouge
+			    "#9E9E9E"                -- Gris neutre
+			)
+			RETURN VarPct
+			```
+		lineageTag: d49a54b8-322f-4130-84a6-a3ff42319cfd
+
+	measure Variation_NPS_Annee = ```
+			
+			VAR Mois_Prec = CALCULATE(
+			    [NPS],
+			    (DATEADD('Dates'[Date], -1, YEAR))
+			)
+			 
+			VAR  Variation_CSAT = DIVIDE( CALCULATE(
+			[NPS] - Mois_Prec), Mois_Prec)*100
+			VAR Variation = 
+			SWITCH(
+			    TRUE(),
+			    Variation_CSAT > 0, "+" & FORMAT(Variation_CSAT, "0") & "%" & "△",
+			    Variation_CSAT < 0, FORMAT(Variation_CSAT, "0") & "%" & "▽ " ,
+			    "↔ 0"
+			)
+			RETURN "(" & Variation & ")" & " " & "vs" & " "& SELECTEDVALUE(Dates[Année])-1
+			```
+		lineageTag: 338fb1e0-a7bb-40d3-97d4-454c6f235ac1
+
+	measure 'NPS Trend Color' = ```
+			
+			VAR Mois_Prec = CALCULATE(
+			    [NPS],
+			    SAMEPERIODLASTYEAR('Dates'[Date])
+			)
+			VAR  Variation_CSAT = DIVIDE( CALCULATE(
+			[NPS] - Mois_Prec), Mois_Prec)*100
+			VAR VarPct = 
+			SWITCH(
+			    TRUE(),
+			    Variation_CSAT > 0, "#4CAF50",   -- Vert
+			    Variation_CSAT < 0, "#F44336",   -- Rouge
+			    "#9E9E9E"                -- Gris neutre
+			)
+			RETURN VarPct
+			```
+		lineageTag: e80441ab-b651-4bd4-aaa3-ba43d95e3480
+
+	column Colonne1
+		isHidden
+		formatString: 0
+		lineageTag: 0680a785-9eff-4156-a167-c2b5049c825f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Colonne1]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Mesures = calculated
+		mode: import
+		source = ```
+				SELECTCOLUMNS( {}, "Colonne1", BLANK() )
+				
+				
+				```
+
+	annotation PBI_Id = 915bd1fd691041429adca367dd286037
+
